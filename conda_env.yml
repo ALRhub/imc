@@ -1,0 +1,18 @@
+name: imc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy=1.24.1=py310h08bbf29_0
+  - pytorch=1.13.0=cuda112py310he33e0d6_200
+  - tqdm=4.64.1=pyhd8ed1ab_0
+  - pip:
+    - einops==0.6.1
+    - omegaconf==2.3.0
+    - gym==0.23.1
+    - dm-control==1.0.12
+    - termcolor==2.3.0
+    - click==8.1.3
+
+
+

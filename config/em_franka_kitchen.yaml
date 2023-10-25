@@ -1,0 +1,28 @@
+n_components: 50
+seed: 2
+tol: 0.0001
+iterations: 50
+device: cuda
+logger: None
+batchsize: 1024
+num_worker: 0
+
+# Expert params
+expert_config:
+  num_hidden_layer: 6
+  hidden_dim: 128
+  learning_rate: 0.0005
+  expert_epochs: 5
+
+# Inference net params
+inference_net_config:
+  num_hidden_layer: 6
+  hidden_dim: 256
+  epochs: 800
+  batchsize: 1024
+  learning_rate: 0.001
+
+# Environment params
+environment_config:
+  eval_traj: 50
+  render: True
